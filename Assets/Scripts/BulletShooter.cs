@@ -9,10 +9,6 @@ public class BulletShooter : MonoBehaviour
 
     public float bulletSpeed = 50f;
 
-
-    private int shotCount = 0;
-
-
     void Update()
     {
         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))

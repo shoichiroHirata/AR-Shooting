@@ -38,12 +38,6 @@ public class Target : MonoBehaviour
         }
     }
 
-    protected virtual void Die()
-    {
-        GameManager.Instance.AddScore(scoreValue);
-        Destroy(gameObject);
-    }
-
     protected virtual IEnumerator DieCoroutine()
     {
         GameManager.Instance.PlayDestroySE();
